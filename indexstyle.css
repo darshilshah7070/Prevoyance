@@ -188,28 +188,29 @@ html {
   }
   
   .w-icon-slider-right:before {
-    content: "î˜€";
+    content: "\e600"; /* Right arrow icon */
   }
   
   .w-icon-slider-left:before {
-    content: "î˜";
+    content: "\e601"; /* Left arrow icon */
   }
   
   .w-icon-nav-menu:before {
-    content: "î˜‚";
+    content: "\2630"; /* Three horizontal lines icon (☰) */
   }
   
   .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-    content: "î˜ƒ";
+    content: "\e602"; /* Down arrow icon */
   }
   
   .w-icon-file-upload-remove:before {
-    content: "î¤€";
+    content: "\e603"; /* File upload remove icon */
   }
   
   .w-icon-file-upload-icon:before {
-    content: "î¤ƒ";
+    content: "\e604"; /* File upload icon */
   }
+  
   
   * {
     box-sizing: border-box;
@@ -3395,7 +3396,7 @@ ul#countdown {
     margin: 0 0 0 20px;
     padding: 30px;
     display: inline-block;
-    width: 55%;
+    width: 5%;
     font-size: 72px;
     font-size: 6vw;
     text-align: center;
@@ -3424,16 +3425,7 @@ ul#countdown {
   margin: 0 0px;
   position: relative;
   }
-  #countdown li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -5px;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 200px;
-  width: 2px; /* Adjust as needed */
-  background-color: rgb(255, 255, 255); /* Adjust color as needed */
-  }
+ 
   .faqs-whole-container {
     max-width: 1300px;
     margin: 100px auto 20px; 
