@@ -3377,57 +3377,62 @@ html {
 
   
 /* Timer css */
- ul#countdown {
-    position: relative;
-    top: 50%;
+ul#countdown {
+  position:absolute;
+  top: 60%;
+  
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  color: #fff;
+  border: 1px solid #adafb2;
+  border-width: 1px 0;
+  overflow: hidden;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  
+  
+  li {
+    margin: 0 0 0 20px;
+    padding: 30px;
+    display: inline-block;
+    width: 55%;
+    font-size: 72px;
+    font-size: 6vw;
+    text-align: center;
     
-    width: 50%;
-    margin: 0 auto;
-    padding: 15px 0 20px 0;
-    color: #fff;
-    border: 1px solid #adafb2;
-    border-width: 1px 0;
-    overflow: hidden;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
+    .label {
+    color: #adafb2;
+
+    font-size: 50px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 10px;
     
-    li {
-      margin: 0 -3px 0 0;
-      padding: 0;
-      display: inline-block;
-      width: 25%;
-      font-size: 72px;
-      font-size: 6vw;
-      text-align: center;
-      
-      .label {
-        color: #adafb2;
-        font-size: 18px;
-        font-size: 1.5vw;
-        text-transform: uppercase;
-      }
+    
     }
   }
+  }
   #countdown {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
   }
   #countdown li {
-    text-align: center;
-    margin: 0 10px;
-    position: relative;
+  text-align: center;
+  margin: 0 0px;
+  position: relative;
   }
   #countdown li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -5px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 200px;
-    width: 2px; /* Adjust as needed */
-    background-color: rgb(255, 255, 255); /* Adjust color as needed */
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200px;
+  width: 2px; /* Adjust as needed */
+  background-color: rgb(255, 255, 255); /* Adjust color as needed */
   }
   .faqs-whole-container {
     max-width: 1300px;
