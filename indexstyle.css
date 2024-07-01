@@ -3378,53 +3378,45 @@ html {
 
   
 /* Timer css */
-ul#countdown {
-  position:absolute;
+#countdown {
+  position: absolute;
   top: 60%;
-  
-  width: 50%;
-  margin: 0 auto;
-  padding: 15px 0 20px 0;
-  color: #fff;
-  border: 1px solid #adafb2;
-  border-width: 1px 0;
-  overflow: hidden;
+  width: 100%;
+  text-align: center; /* Center the list items */
   font-family: 'Arial Narrow', Arial, sans-serif;
-  
-  
-  li {
-    margin: 0 0 0 20px;
-    padding: 30px;
-    display: inline-block;
-    width: %;
-    font-size: 72px;
-    font-size: 6vw;
-    text-align: center;
-    
-    .label {
-    color: #adafb2;
+  color: #fff;
+}
 
-    font-size: 50px;
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    margin: auto;
-    padding: 10px;
-    
-    
-    }
-  }
-  }
+#countdown li {
+  display: inline-block;
+  margin: 0 0px; /* Adjust spacing between list items */
+  padding: 15px;
+  font-size: 6vw; /* Responsive font size */
+  text-align: center;
+  border: 0px solid #adafb2;
+  border-radius: 5px; /* Optional: add rounded corners */
+}
+
+#countdown .label {
+  font-size: 1.5vw; /* Responsive font size for labels */
+  text-transform: uppercase;
+  color: #adafb2;
+  margin-top: 25px; /* Adjust spacing */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
   #countdown {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+    top: 50%; /* Adjust positioning for smaller screens */
   }
   #countdown li {
-  text-align: center;
-  margin: 0 0px;
-  position: relative;
+    font-size: 10vw; /* Adjust font size for smaller screens */
   }
+  #countdown .label {
+    font-size: 3vw; /* Adjust label font size for smaller screens */
+  }
+}
+
  
   .faqs-whole-container {
     max-width: 1300px;
