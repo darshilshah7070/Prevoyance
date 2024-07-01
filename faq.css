@@ -176,7 +176,7 @@ html {
     font-style: normal;
   }
   
-  [class^="w-icon-"], [class*=" w-icon-"] {
+    [class^="w-icon-"], [class*=" w-icon-"] {
     speak: none;
     font-variant: normal;
     text-transform: none;
@@ -189,27 +189,27 @@ html {
   }
   
   .w-icon-slider-right:before {
-    content: "î˜€";
+    content: "\e600"; /* Right arrow icon */
   }
   
   .w-icon-slider-left:before {
-    content: "î˜";
+    content: "\e601"; /* Left arrow icon */
   }
   
   .w-icon-nav-menu:before {
-    content: "î˜‚";
+    content: "\2630"; /* Three horizontal lines icon (☰) */
   }
   
   .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-    content: "î˜ƒ";
+    content: "\e602"; /* Down arrow icon */
   }
   
   .w-icon-file-upload-remove:before {
-    content: "î¤€";
+    content: "\e603"; /* File upload remove icon */
   }
   
   .w-icon-file-upload-icon:before {
-    content: "î¤ƒ";
+    content: "\e604"; /* File upload icon */
   }
   
   * {
