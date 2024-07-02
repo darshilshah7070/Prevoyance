@@ -2921,13 +2921,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
     font-family: Ubuntu, Helvetica, sans-serif;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .heading-19 {
     color: #70c267;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .div-block-2 {
