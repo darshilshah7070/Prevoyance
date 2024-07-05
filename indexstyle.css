@@ -2921,13 +2921,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
     font-family: Ubuntu, Helvetica, sans-serif;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .heading-19 {
     color: #70c267;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .div-block-2 {
@@ -3858,3 +3858,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         border-radius: 5px;
     }
 }
+footer {
+    background-color: #111111;
+    color: #fff;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    
+  }
+  .developed-by {
+    margin-bottom: 5px; /* Add some space below "Developed by:" */
+    margin-left: 150px;
+  }
+  
+  .footer-right .social-icon {
+    color: #111111;
+    font-size: 16px;
+    margin: 0 8px;
+  }
+  
+  .footer-right .social-icon:hover {
+    color: #111111;
+  }
+  .linkedin-icon {
+    margin-left: 3px;
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  .linkedin-icon:hover {
+    color: #005582;
+  }
+  .developer-link {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .developer-link:hover {
+    text-decoration: underline;
+  }
+  .separator {
+    margin: 0 10px; /* Add space around the separator */
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 8px 0;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+  
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      margin-bottom: 5px;
+    }
+  
+    .footer-right .social-icon {
+      font-size: 14px;
+      margin: 0 6px;
+    }
+  }
+  

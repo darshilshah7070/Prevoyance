@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQWV5HNPZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LQWV5HNPZV');
+</script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Prevoyance FAQs</title>
 
 	<link rel="stylesheet" type="text/css" href="faq.css">
+        <script src="https://kit.fontawesome.com/2236dbe96a.js" crossorigin="anonymous"></script>
+
 
     <script src="faq-script.js"></script>
     <link href="img\Eco_icon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="img\Eco_icon.png" rel="apple-touch-icon" />
+
+    <style>
+        .navbar-2 .w-nav-button {
+            display: none;
+            cursor: pointer;
+        }
+        .navbar-2 .w-icon-nav-menu {
+            width: 30px;
+            height: 30px;
+            background-image: url('img\icons8-hamburger-menu-48.png');
+            background-size: cover;
+        }
+        @media (max-width: 768px) {
+            .navbar-2 .w-nav-button {
+                display: block;
+            }
+            .navbar-2 .w-nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #c8c8c8;
+                z-index: 9999;
+            }
+            .navbar-2 .w-nav-menu.open {
+                display: block;
+            }
+            .navbar-2 .w-nav-menu a {
+                display: block;
+                padding: 10px 20px;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    </style>
 
 </head>
 <body>
 
     <section>
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-            role="banner" class="navbar-2 w-nav">
-            <div class="container-5 w-container"><a href="/" class="w-nav-brand"><img
-                        src="https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707.png"
-                        loading="lazy" width="80" height="80" alt="ECO Logo
-    " srcset="https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707-p-500.png 500w, https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707-p-800.png 800w, https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707.png 986w"
-                        sizes="(max-width: 479px) 80vw, 80px" class="image-4" /></a>
-                <nav role="navigation" class="w-nav-menu">
-                    <a href="/"
-                    class="nav-link-8 w-nav-link">Home</a>
-                    <a href="AboutUS.html" class="about w-nav-link">About Us</a><a
-                        href="#ContactUs" class="nav-link-8 w-nav-link">Contact</a>
-                       
-                        <a href="Events.html"
-                        data-w-id="d73be848-d276-374e-8578-dd54be728b13"
-                        class="nav-link-6 eventbutton w-nav-link">Events</a></nav>
-                <div class="w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
-                </div>
+        role="banner" class="navbar-2 w-nav">
+        <div class="container-5 w-container">
+            <a href="/" class="w-nav-brand">
+                <img src="https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707.png"
+                    loading="lazy" width="80" height="80" alt="ECO Logo"
+                    srcset="https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707-p-500.png 500w, https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707-p-800.png 800w, https://cdn.prod.website-files.com/665c769f25303fad11727969/665c7727a2ee41da0f833269_Screenshot%202024-06-02%20183707.png 986w"
+                    sizes="(max-width: 479px) 80vw, 80px" class="image-4" />
+            </a>
+            <nav role="navigation" class="w-nav-menu">
+                <a href="/" class="nav-link-8 w-nav-link">Home</a>
+                <a href="AboutUS.html" class="about w-nav-link">About Us</a>
+                <a href="#ContactUs" class="nav-link-8 w-nav-link">Contact</a>
+                <a href="Events.html" data-w-id="d73be848-d276-374e-8578-dd54be728b13" class="nav-link-6 eventbutton w-nav-link">Events</a>
+            </nav>
+            <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
             </div>
         </div>
+    </div>
+
     </section>
     <h2 class="faqs-whole-container-faq-heading"><p>Frequently Asked Question's</h2>
 
@@ -147,6 +194,54 @@
     </div>
 </section>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuButton = document.querySelector('.w-nav-button');
+        var navMenu = document.querySelector('.w-nav-menu');
 
+        menuButton.addEventListener('click', function () {
+            navMenu.classList.toggle('open');
+        });
+    });
+</script>
+        <footer>
+            <div class="footer-container">
+              <div class="footer-left">
+                <p><strong>© 2024  •  <span style="color: #00ad00;">ECO</span></strong></p>
+              </div>
+              <div class="footer-center">
+                <p class="developed-by">Developed by</p>
+                <p>
+                  <strong>
+                    <a href="http://www.linkedin.com/in/harsh-kumar-jha26" class="developer-link">
+                      Harsh Kumar Jha
+                    </a>
+                    <a href="http://www.linkedin.com/in/harsh-kumar-jha26" class="linkedin-icon">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="https://www.linkedin.com/in/het-patel-65a272252/" class="developer-link">
+                      Het Patel
+                    </a>
+                    <a href="https://www.linkedin.com/in/het-patel-65a272252/" class="linkedin-icon">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <span class="separator">|</span>
+                    <a href="https://www.linkedin.com/in/darshilshah7070" class="developer-link">
+                      Darshil Shah
+                    </a>
+                    <a href="https://www.linkedin.com/in/darshilshah7070" class="linkedin-icon">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </strong>
+                </p>
+              </div>
+              <div class="footer-right">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>
