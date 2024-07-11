@@ -6,6 +6,10 @@ html {
 
 body {
     margin: 0rem;
+    
+}
+
+html, body {
     overflow-x: hidden;
 }
 
@@ -265,7 +269,6 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    overflow-x: hidden;
 }
 
 img {
@@ -3073,7 +3076,6 @@ textarea.w-select {
 @media screen and (max-width: 991px) {
     .body {
         background-position: 50%;
-        overflow-x: hidden;
     }
 
     .image-4 {
@@ -3142,7 +3144,6 @@ textarea.w-select {
 
     .body {
         background-position: 50%;
-        overflow-x: hidden;
     }
 
     .image-4 {
@@ -3264,7 +3265,6 @@ textarea.w-select {
     .body {
         background-position: 50% 60%;
         background-repeat: repeat-x;
-        overflow-x: hidden;
     }
 
     .image-4 {
