@@ -3529,11 +3529,18 @@ footer {
     height: 350px; /* Maintain aspect ratio */
     border-radius: 20px; /* Optional: rounded corners */
 }
+.title {
+  text-align: center; /* Center the text */
+  font-size: 30px; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  text-decoration: underline; /* Add underline */
+  color: white;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack images on smaller screens */
-        gap: 10px; /* Less space between images on mobile */
+        gap: 35px; /* Less space between images on mobile */
     }
 }
