@@ -2234,7 +2234,7 @@ html {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-image: url(img/17.png);
+    background-color: #000;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
